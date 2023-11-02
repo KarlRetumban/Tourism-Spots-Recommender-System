@@ -8,7 +8,7 @@ Track Recommender System. We will be using a variety of data like social media d
 and reviews. 
 
 #### Tourist Spots and Walks
-These are the various constructed tourist walks locations in Australia.
+These are sample constructed tourist walks locations in Australia.
 
 ##### Darwin
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/Darwin.PNG)
@@ -21,10 +21,16 @@ These are the various constructed tourist walks locations in Australia.
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/Jabiru.PNG)
 
 
-#### Recommend a touristic walk for user
+The above constructed touristic walks are polygons we created to simulate a particular tourist spots, destinations or iteniraries. These can be replaced by other spots like malls, coffee shops, restaurant and other places where people mostly go.
+
+
+
+
+## Recommend a touristic walk for user
 Given the location of the user, we recommend the nearest touristic walk.
 
 The current location of "Quinn Hutchason" is at (132.2566860127223,-14.456738124716464).
+
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/user_location_quin.PNG)
 
 
@@ -39,6 +45,30 @@ LIMIT 1
 
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/user_recommended_quin.PNG)
 
+
+
+### Recommend the same tourist spot to social connections
+
+Using the code below, we can extract the social media connection of the user and recommend the same tourist walk for future itineraries.
+
+~~~sql
+--C. Retrieve friendship/social media links for a specific person 
+
+SELECT user_id, user_name, user_id2 as userid_socialmedia_link, user_name2 as socialmedia_link, linktype
+FROM socmed.socmed_link
+WHERE user_name = 'Sydney Robbs'
+UNION
+SELECT user_id2, user_name2, user_id as userid_socialmedia_link, user_name  as socialmedia_link, linktype
+FROM socmed.socmed_link
+WHERE user_name2 = 'Sydney Robbs'
+
+~~~
+
+Below are the social media conneections we extraced.
+
+![alt text](https://github.com/KarlRetumban/Test/blob/main/userlinks_recommended_quin.PNG)
+
+_____________
 
 #### Code for creating Polygons
 
