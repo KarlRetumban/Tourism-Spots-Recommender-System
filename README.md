@@ -66,7 +66,7 @@ WHERE user_name2 = 'Sydney Robbs'
 
 Below are the social media conneections we extraced.
 
-![alt text](https://github.com/KarlRetumban/Test/blob/main/userlinks_recommended_quin.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/userlinks_recommended.PNG)
 
 _____________
 
