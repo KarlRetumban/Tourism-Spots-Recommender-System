@@ -20,9 +20,29 @@ These are the various constructed tourist walks locations in Australia.
 ##### Jabiru
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/Jabiru.PNG)
 
+
+#### Recommend a touristic walk for user
+Given the location of the user, we recommend the nearest touristic walk.
+
+The current location of "Quinn Hutchason" is at (132.2566860127223,-14.456738124716464).
+![alt text](https://github.com/KarlRetumban/Test/blob/main/user_location_quin.PNG)
+
+
+Then we get the nearest touristic walk using the code below.
+
+~~~sql
+SELECT gid, name, ST_Distance(ST_SetSRID(ST_MakePoint(132.2566860127223,-14.456738124716464), 4326),geom) AS distance, geom
+FROM spatial.tracklog
+ORDER BY ST_Distance(ST_SetSRID(ST_MakePoint(132.2566860127223,-14.4567381247164642), 4326),geom)
+LIMIT 1
+~~~
+
+![alt text](https://github.com/KarlRetumban/Test/blob/main/user_recommended_quin.PNG)
+
+
 #### Code for creating Polygons
 
-~~~~sql
+~~~sql
 
 --Create new schema
 CREATE SCHEMA spatial
@@ -84,7 +104,8 @@ VALUES ('Katherine Farm Walk',ST_GeomFromText('POLYGON((
 					132.83928167621983 -12.685136915044797,
 					132.82443959640446 -12.68841208861648,
 					132.81330803654296 -12.682034080157155,
-					132.8322140191649 -12.654624064057252))',4326))	;
+					132.8322140191649 -12.654624064057252))',4326))
+									;
 ~~~
 
-## ADB
+### ff
