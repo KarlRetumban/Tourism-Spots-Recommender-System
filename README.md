@@ -11,14 +11,14 @@ and reviews.
 These are sample constructed tourist walks locations in Australia.
 
 ##### Darwin
-![alt text](https://github.com/KarlRetumban/Test/blob/main/Darwin.PNG)
+![alt text](https://github.com/KarlRetumban/Tourism-Track-Recommender-System/blob/main/images/Darwin.PNG)
 
 
 ##### Katherine
-![alt text](https://github.com/KarlRetumban/Test/blob/main/Katherine.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/images/Katherine.PNG)
 
 ##### Jabiru
-![alt text](https://github.com/KarlRetumban/Test/blob/main/Jabiru.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/images/Jabiru.PNG)
 
 
 The above constructed touristic walks are polygons we created to simulate a particular tourist spots, destinations or iteniraries. These can be replaced by other spots like malls, coffee shops, restaurant and other places where people mostly go.
@@ -31,7 +31,7 @@ Given the location of the user, we recommend the nearest touristic walk.
 
 The current location of "Sydney Robbs" is at (132.2566860127223,-14.4567381247164642).
 
-![alt text](https://github.com/KarlRetumban/Test/blob/main/user_location_quin.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/images/user_location_quin.PNG)
 
 
 Then we get the nearest recommended touristic walk using the code below.
@@ -43,7 +43,7 @@ ORDER BY ST_Distance(ST_SetSRID(ST_MakePoint(132.2566860127223,-14.4567381247164
 LIMIT 1
 ~~~
 
-![alt text](https://github.com/KarlRetumban/Test/blob/main/user_recommended_quin.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/images/user_recommended_quin.PNG)
 
 
 
@@ -66,7 +66,7 @@ WHERE user_name2 = 'Sydney Robbs'
 
 Below are the social media connections we extraced.
 
-![alt text](https://github.com/KarlRetumban/Test/blob/main/userlinks_recommended.PNG)
+![alt text](https://github.com/KarlRetumban/Test/blob/main/images/userlinks_recommended.PNG)
 
 _____________
 
