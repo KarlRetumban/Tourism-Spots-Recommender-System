@@ -29,7 +29,7 @@ The above constructed touristic walks are polygons we created to simulate a part
 ## Recommend a touristic walk for user
 Given the location of the user, we recommend the nearest touristic walk.
 
-The current location of "Quinn Hutchason" is at (132.2566860127223,-14.456738124716464).
+The current location of "Sydney Robbs" is at (132.2566860127223,-14.4567381247164642)).
 
 ![alt text](https://github.com/KarlRetumban/Test/blob/main/user_location_quin.PNG)
 
@@ -138,4 +138,4 @@ VALUES ('Katherine Farm Walk',ST_GeomFromText('POLYGON((
 									;
 ~~~
 
-### ff
+
