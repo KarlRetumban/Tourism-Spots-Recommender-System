@@ -1,11 +1,9 @@
-# Tourism Track Recommender System using Geotagged Social Media Data
+# Tourism Spots Recommender System using Geotagged Social Media Data
 ### The tool used is pgAdmin for Postgresql and PostGIS
 
 ### Description of the Use Case
 In this project, we will develop a recommender system that will propose or recommend tourist 
-walks for people visiting Northern Territory. The project case study is called a Tourism 
-Track Recommender System. We will be using a variety of data like social media data, spatial data,
-and reviews. 
+walks or spots for people visiting Australia. We will be using a variety of data like social media data and spatial data to represent touristic walks.
 
 #### Tourist Spots and Walks
 These are sample constructed tourist walks locations in Australia.
