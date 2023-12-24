@@ -1,5 +1,5 @@
 # Tourism Track Recommender System using Geotagged Social Media Data
-### The tools used are pgAdmin for Postgresql and PostGIS
+### The tool used is pgAdmin for Postgresql and PostGIS
 
 ### Description of the Use Case
 In this project, we will develop a recommender system that will propose or recommend tourist 
